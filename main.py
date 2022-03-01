@@ -51,8 +51,11 @@ print(sum_numbers_seven)
 print(list_number)
 #---------------------------Задание 3--------------------------
 for i in range(1, 100):
+    number_ten = i // 10
     number_last = i % 10
-    if number_last == 1:
+    if number_ten == 1:
+        print(i, ' процентов')
+    elif number_last == 1:
         print(i, ' процент')
     elif number_last == 2 or number_last == 3 or number_last == 4:
         print(i, ' процента')
