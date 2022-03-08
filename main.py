@@ -29,14 +29,14 @@ print(result)
 #---------------------------Задание 2--------------------------
 list_number = []
 sum_numbers_seven = 0
-for number_item in range(1, 1000, 2):
+for number_item in range(1, 1001, 2):
     coub_number = number_item**3
     list_number.append(coub_number)
     temp_summ = 0
     for number_element in str(coub_number):
         temp_summ += int(number_element)
-    if not temp_summ % 7:
-        sum_numbers_seven += temp_summ
+    if temp_summ % 7 == 0:
+        sum_numbers_seven += coub_number
 print(sum_numbers_seven)
 print(list_number)
 sum_numbers_seven = 0
@@ -45,8 +45,8 @@ for i in range(0, len(list_number)):
     temp_summ = 0
     for number_element in str(list_number[i]):
         temp_summ += int(number_element)
-    if not temp_summ % 7:
-        sum_numbers_seven += temp_summ
+    if temp_summ % 7 == 0:
+        sum_numbers_seven += list_number[i]
 print(sum_numbers_seven)
 print(list_number)
 #---------------------------Задание 3--------------------------
