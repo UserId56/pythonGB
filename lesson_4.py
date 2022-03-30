@@ -1,1 +1,4 @@
-## Пока тут ни чего нет, но скоро будет)
+import utils.main as get_valute
+
+
+print(get_valute.currency_rates('usd'))
